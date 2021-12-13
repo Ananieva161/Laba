@@ -1,0 +1,82 @@
+#!/bin/bash
+
+echo -n "hello"
+echo ""
+echo -n "install"
+echo ""
+echo -n "uninstall"
+echo ""
+echo -n "district"
+echo ""
+echo -n "clean"
+echo ""
+echo -n "cloon"
+echo ""
+echo -n "help"
+echo ""
+echo -n "doc"
+echo ""
+echo -n "test"
+echo ""
+echo -n "wc"
+echo ""
+echo -n "Прошу, введите интересующую вас команду: "
+read COMM
+
+case $COMM in
+
+  install)
+    echo -n "Установка скомпилированного проекта в /home/02/tverdohl/mak/hin"
+    echo ""
+    ;;
+
+  uninstall)
+    echo -n "Удаление скомпилированного проекта из /home/02/tverdohl/mak/hin"
+    echo ""
+    ;;
+
+  hello)
+    echo -n "Запуск проекта"
+    echo ""
+    ;;
+
+  district)
+    echo -n "Создание дистрибутива проекта"
+    echo ""
+    ;;
+
+  help)
+    echo -n "Помощь по командам make"
+    echo ""
+    ;;
+
+  clean)
+    echo -n "Полная очистка проекта"
+    echo ""
+    ;;
+
+  cloon)
+    echo -n "Удаление объектных файлов"
+    echo ""
+    ;;
+
+  doc)
+    echo -n "Создание документации с помощью doxygen"
+    echo ""
+    ;;
+
+  wc)
+    echo -n "Вывод информации о файлах, сколько они содержат строк"
+    echo ""
+    ;;
+
+  test)
+    echo -n "Тестовый запуск программы"
+    echo ""
+    ;;
+
+  *)
+    echo -n "Вы уверены, что такая команда существует?"
+    echo ""
+    ;;
+esac

@@ -1,0 +1,14 @@
+#include <stdio.h>
+void world();
+
+int main()
+{
+/**
+*@brief Начало приветствия
+*@detailed Данная функция выводит Hello, , а после обращается к следующей программе
+*@return 0
+*/
+    fprintf(stdout, "Hello, ");
+    world();
+    return 0;
+}
